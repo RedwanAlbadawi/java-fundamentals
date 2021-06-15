@@ -1,8 +1,40 @@
 package com.fundamentals.java;
 
+//import com.fundamentals.lessons.Lesson5;
+import com.fundamentals.lessons.*;
 public class Main {
 
     public static void main(String[] args) {
+        // lesson4Examples();
+        //lesson5Examples();
+        lesson6Examples();
+    }
+
+
+    public static void lesson6Examples() {
+        Lesson6 myLesson6 = new Lesson6();
+        myLesson6.exampleCharAt();
+        myLesson6.exampleConcat();
+        boolean val = myLesson6.exampleEquals();
+        String str1 = myLesson6.exampleLowercase("HAPPY");
+        myLesson6.exampleUppercase("example");
+        System.out.println(myLesson6.exampleLength());
+        myLesson6.exampleBuilder("Spaghetti", 2);
+        myLesson6.exampleChar();
+        myLesson6.exampleEscape();
+    } // end method
+
+    public static void lesson5Examples() {
+        Lesson5 myLesson5 = new Lesson5();
+        myLesson5.showLocalExample();
+        myLesson5.showLocalWithParamerter(10,12);
+        int example = myLesson5.showLocalWithReturn(15,8);
+        System.out.println(example);
+        myLesson5.showInstanceVariable();
+        myLesson5.showConversion();
+    }
+
+    public static void lesson4Examples(){
 	// write your code here
         System.out.println("Welcome to Java");
         System.out.println("This is my first sentence");
