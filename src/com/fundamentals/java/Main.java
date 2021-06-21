@@ -14,8 +14,18 @@ public class Main {
         //lesson7Examples();
         //lesson8Examples();
         //moreLesson8();
-        song();
+        //song();
+        lesson9Examples();
     }
+
+    public static void lesson9Examples() {
+        Lesson9 myNine = new Lesson9();
+        myNine.basicIntArray();
+        myNine.basicStringArray();
+        myNine.basicTwoDimensionalArray();
+        myNine.basicThreeDimensionalArray();
+        myNine.basicJaggedArray();
+    } // end method
 
     public static void song(){
         BottlesOfBeerSong bob = new BottlesOfBeerSong();
