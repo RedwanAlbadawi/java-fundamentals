@@ -25,7 +25,6 @@ public class Lesson11 {
 
     public String getfName() {
         return fName;
-        return fName;
     } // end method
 
     public String getlName() {
