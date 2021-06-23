@@ -1,21 +1,48 @@
 package com.fundamentals.java;
 
-//import com.fundamentals.lessons.Lesson5;
-//import com.fundamentals.lessons.Lesson6;
-//import com.fundamentals.lessons.Lesson7;
 import com.fundamentals.lessons.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        // lesson4Examples();
+        //lesson4Examples();
         //lesson5Examples();
         //lesson6Examples();
         //lesson7Examples();
         //lesson8Examples();
         //moreLesson8();
         //song();
-        lesson9Examples();
+        //lesson9Examples();
+        //lesson10Examples();
+        //houseConstructorExample();
+        lesson11Examples();
+    }
+
+     public static void lesson11Examples() {
+        Lesson11 myEleven = new Lesson11("Kansas City");
+        System.out.println(myEleven.getfName() + " " +
+                myEleven.getlName() + " is from " + myEleven.getCity());
+    } // end method
+
+    public static void houseConstructorExample(){
+        House house1 = new House();
+        house1.setDoorColor("Green");
+        System.out.println(house1.getDoorColor());
+
+        House house2 = new House("red");
+        //System.out.println(house2.getFoundationType()); // prints null
+
+        House house3 = new House("blue","metal",
+                "bamboo",32);
+        System.out.println(house3.getRoofStyle());
+    } // end method
+
+    public static void lesson10Examples() {
+        Lesson10 myten = new Lesson10();
+        myten.showPublicExample();
+
+        Lesson10Demo myTenDemo = new Lesson10Demo();
+        myTenDemo.showOtherModifiers();
     }
 
     public static void lesson9Examples() {
