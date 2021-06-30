@@ -4,6 +4,17 @@ import com.fundamentals.lessons.*;
 
 public class Main {
 
+    public static int num = 0;
+
+    static {
+        num = 42;
+        System.out.println("static Block 1 = " + num);
+    }
+    static {
+        num = 63;
+        System.out.println("Static Block 2 = " + num);
+    }
+
     public static void main(String[] args) {
         //lesson4Examples();
         //lesson5Examples();
@@ -17,7 +28,67 @@ public class Main {
         //houseConstructorExample();
         //lesson11Examples();
         //condoExample();
-        lesson12Examples();
+        //lesson12Examples();
+        //lesson14Examples();
+        //lesson15Example();
+        //lesson16Example();
+        lesson17Example();
+    }
+
+    public static void lesson17Example(){
+        Lesson17 my17 = new Lesson17();
+        my17.exampleArrayList1();
+        my17.exampleArrayList2();
+        my17.exampleArrayListHouse();
+        my17.exampleHashSet();
+        my17.exampleHashMap();
+    }
+
+    public static void lesson16Example() {
+        Lesson16 my16 = new Lesson16();
+        my16.showEnum();
+
+        my16.myFavoriteFlavor(Lesson16.IceCreamFlavors.ROCK_ROAD);
+
+        Lesson16Enum[] days = Lesson16Enum.values();
+        for(Lesson16Enum day : days){
+            System.out.println(day + " at index " + day.ordinal());
+        } // for-each loop version of the for loop
+
+        for(Lesson16Enum dayVal : days){
+            System.out.println("Day name: " + dayVal.toString()+
+                    " Day Number: " + dayVal.getDayNum());
+        } // end for-ea
+    } // end method
+
+    public static void lesson15Example() {
+        int[] myKeys = {0,1,2,3,4,5,6,7,8,9};
+        Lesson15Child myIPhone = new Lesson15Child(25,myKeys,
+                0, "Color Screen");
+        myIPhone.sendCall();
+        myIPhone.holdCall();
+        System.out.println(myIPhone.getScreen());
+
+        // Abstract object through its child class only
+        Lesson15Abstract blackberry = new Lesson15Child(10, myKeys,
+                -1, "monchrome");
+        blackberry.receiveCall();
+    } // end method
+
+    public static void lesson14Examples(){
+        // Can not change a value of a final variable
+        // Lesson14.MY_FIRST_FINAL = 10;
+        int total = Lesson14.MY_FIRST_FINAL +20;
+        System.out.println(total);
+
+        // Can change a value of a non-final static
+        Lesson14.myFirstStatic = 40;
+        System.out.println(Lesson14.myFirstStatic);
+
+        Lesson14.myStaticMethodExample(10);
+
+        Lesson14.MyInnerClass myInnerClass = new Lesson14.MyInnerClass();
+        myInnerClass.myInnerMethod();
     }
 
     // also uses lesson 13
