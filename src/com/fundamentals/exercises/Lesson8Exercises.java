@@ -1,6 +1,6 @@
 package com.fundamentals.exercises;
 
-public class Lesso8Exercises {
+public class Lesson8Exercises {
     /*
     * Write a method
     *
