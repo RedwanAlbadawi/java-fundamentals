@@ -23,7 +23,7 @@ public class Main {
         //lesson8Examples();
         //moreLesson8();
         //song();
-        //lesson9Examples();
+        lesson9Examples();
         //lesson10Examples();
         //houseConstructorExample();
         //lesson11Examples();
@@ -32,8 +32,15 @@ public class Main {
         //lesson14Examples();
         //lesson15Example();
         //lesson16Example();
-        lesson17Example();
+        //lesson17Example();
+        lesson18Example();
     }
+
+    public static void lesson18Example() {
+        Lesson18 my18 = new Lesson18();
+       // my18.exampleThrows();
+
+    } // end method
 
     public static void lesson17Example(){
         Lesson17 my17 = new Lesson17();

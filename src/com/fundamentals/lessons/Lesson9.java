@@ -30,9 +30,10 @@ public class Lesson9 {
     public void basicTwoDimensionalArray() {
         int[][] myArray = {{23, 45}, {35, 46}, {57, 98}};
         for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; i < myArray[i].length; j++) {
+            for (int j = 0; j < myArray[i].length; j++) {
                 System.out.println(myArray[i][j]);
             } // end inner loop
+            System.out.println();
         } // end outer for loop
     } // end method
 
